@@ -1,0 +1,112 @@
+body {
+    background-color: beige;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todolist {
+    margin: 3rem auto;
+    max-width: 40rem;
+    -webkit-box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    -moz-box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    border-radius: 1%;
+}
+
+.placeholder {
+    display: grid;
+    text-align: center;
+}
+
+[for="goal"] {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+}
+
+[type="text"] {
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+.add-goal {
+    font-size: 1.2rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+/* CALCULATOR */
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    max-width: fit-content;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    -moz-box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    box-shadow: 0px 0px 28px 11px rgba(36, 38, 47, 1);
+    border-radius: 2%;
+    padding: 1rem;
+    background-color: blanchedalmond;
+}
+
+.div-input {
+    display: flex;
+}
+
+.maths-operation {
+    text-align: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    margin: 0 auto;
+}
+
+
+.grid-container button {
+    font-weight: 600;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10%;
+    border-color: grey;
+    font-size: 1.2rem
+}
+
+.calculator-input {
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+    width: 100%;
+    direction: rtl;
+}
+
+.operation {
+    background-color: yellow;
+}
+
+.operation:active {
+    background: white;
+}

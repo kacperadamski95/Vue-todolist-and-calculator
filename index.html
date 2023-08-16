@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Vue exercises - to do list</title>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+    </head>
+    <body id="app">
+        <header>
+            <h1>Vue Exercise - to do list</h1>
+        </header>
+        <section id="todolist">
+            <div class="placeholder">
+                <label for="goal">Goal</label>
+                <input type="text" id="goal" v-on:keydown.enter="addGoal()" v-model="enteredValue">
+                <button v-on:click="addGoal()" class="add-goal">Add goal</button>
+            </div>
+            <ul class="list">
+                <li v-for="goal in goals">{{ goal }}</li>
+            </ul>
+        </section>
+            <h1>Calculator exercise</h1>
+        <section id="calculator">
+            <div class="div-input">
+            <input v-model="enteredValueCalculator" type="text" class="calculator-input">
+            </div>
+            <div class="grid-container">
+                <button v-on:click="insertNumber(7)">7</button>
+                <button v-on:click="insertNumber(8)">8</button>
+                <button v-on:click="insertNumber(9)">9</button>
+                <button v-on:click="operator('%')" class="operation">%</button>
+                <button v-on:click="insertNumber(4)">4</button>
+                <button v-on:click="insertNumber(5)">5</button>
+                <button v-on:click="insertNumber(6)">6</button>
+                <button v-on:click="operator('x')" class="operation">x</button>
+                <button v-on:click="insertNumber(1)">1</button>
+                <button v-on:click="insertNumber(2)">2</button>
+                <button v-on:click="insertNumber(3)">3</button>
+                <button v-on:click="operator('-')" class="operation">-</button>
+                <button v-on:click="insertNumber(0)">0</button>
+                <button v-on:click="fraction()" class="dot">.</button>
+                <button v-on:click="result()" class="operation">=</button>
+                <button v-on:click="operator('+')" class="operation">+</button>
+                <button v-on:click="clearValue()" class="operation">C</button>
+            </div>
+        </section>
+    </body>
+</html>
